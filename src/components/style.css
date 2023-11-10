@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
+    width: 35rem;
+    position:absolute;
+    top: 10%;
+    left: 30%;
+    background-color: rgb(184, 184, 233);
+    
+}
+.item{
+    padding: 1rem 4rem;
+    margin-bottom:1em;
+}
+#paragraph{
+    width: 28rem; 
+    height: 10rem;
+    border-radius: 4px;
+    /* padding-top:0px; Changing this will affect the position of the text */
+}
+.item#kk2{
+    padding-top:0;
+}
+#kk {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+/*  When you have a flex container (like your .container), by default, it tries to make its items (the things inside it) stretch to fill the available space vertically. This might make it look like the content is centered.
+
+If you remove the align-items: center;, the default stretching behavior is still there. Now, if you use text-align: left; on one of the items (like #kk), it will seem like it's moving to the left because it's not being stretched anymore.
+
+If you want to make sure it's really on the left without any stretching, you can add align-items: flex-start; to the container. This says, "Hey, items, don't stretch vertically, just go to the top (start) of the container." Now, text-align: left; will work without any surprises because it's truly on the left.
+
+So, in short, align-items and text-align work together, and by adjusting them, you control how things are aligned vertically and horizontally. */
